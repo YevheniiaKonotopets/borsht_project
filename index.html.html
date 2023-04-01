@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Borscht lover</title>
+    <style>
+      body {
+        background: linear-gradient(#d8360d, #312e27);
+        text-align: center;
+      }
+      h1 {
+        color: #;
+      }
+      h2 {
+        border: 2px solid #74584c;
+        border-radius: 10px;
+        color: #74584c;
+        font-size: 20px;
+        max-width: 100%;
+        padding: 15 px;
+        text-align: center;
+      }
+      img {
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+      hr {
+        background-color: #74584c;
+      }
+      p {
+        color: #74584c;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      button {
+        background: #d8360d;
+        border: none;
+        border-radius: 40px;
+        box-shadow: 5 5 5 rgb(0, 0, 0, 0.3);
+        color: aliceblue;
+        display: block;
+        font-size: 24px;
+        margin: 20px auto;
+        padding: 20px 30px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: #d17262;
+        color: #312e27;
+        cursor: pointer;
+      }
+
+      .learnMore {
+        color: #74584c;
+        display: block;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-top: 10px;
+        text-decoration: none;
+      }
+      .learnMore:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .container {
+        background: #e3d5d4;
+        border-radius: 10px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px 60px;
+      }
+      .borscht:hover {
+        color: #d8360d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Borscht</h1>
+      <h2><em>Especially when someone cooked it for me</em></h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/183/original/ukrainian-borscht-with-pork-ribs_sitewebeng-1000x600.jpg?1677422592"
+        alt="Borscht"
+      />
+      <hr />
+      <p>
+        <span class="borscht">Borscht</span> is the national dish of Ukrainians,
+        a symbol of Ukrainian culinary culture and prosperity. It is the main
+        first course of Ukrainian cuisine. There are three main varieties of
+        <span class="borscht">borscht</span> in Ukraine: red
+        <span class="borscht">borscht</span>, green
+        <span class="borscht">borscht</span> and cold
+        <span class="borscht">borscht</span>. The most common type of
+        <span class="borscht">borscht</span> is red
+        <span class="borscht">borscht</span>, which is cooked from chopped
+        beets, cabbage with the addition of potatoes and various seasonings. The
+        common feature of it is probably a sour taste.
+        <span class="borscht">Borscht</span> gained international recognition.
+        <br />
+        <a
+          class="learnMore"
+          href="https://www.unesco.org/en/articles/culture-ukrainian-borscht-cooking-inscribed-list-intangible-cultural-heritage-need-urgent"
+          target="_blank"
+          ><strong>Learn more</strong>
+        </a>
+      </p>
+
+      <button>Choose your favourite recepie</button>
+      <hr />
+      <p class="footer">
+        This page was build by <strong>Yevheniia Konotopets</strong>
+      </p>
+    </div>
+    <script>
+      function giveLink() {
+        let name = prompt("What is your name?");
+        if (name.length < 1) {
+          name = "Stranger";
+        } else {
+          alert("Thanks for naming yourself!");
+        }
+
+        alert(
+          `${name}, to see a lot of recepies use this link: 
+
+          https://klopotenko.com/en/borscht-en
+
+          Have a great adventure and become a borstch lover!!!`
+        );
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", giveLink);
+    </script>
+  </body>
+</html>
